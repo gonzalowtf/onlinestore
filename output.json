@@ -1,0 +1,17 @@
+{ "_id" : { "$oid" : "53fbe1516c93092803000003" }, "model" : "Angry Birds", "style" : "Casual", "size" : 38, "colour" : "red", "price" : 367, "summary" : "summer 2014", "img" : "/img/angry.jpg" }
+{ "_id" : { "$oid" : "5401cb0452468d2c11000005" }, "model" : "Batman", "style" : "Alternative", "size" : 44, "colour" : "black", "price" : 378, "summary" : "summer 2013 limited edition marvel", "img" : "/img/batman.jpg" }
+{ "_id" : { "$oid" : "5401ffbf4ce57f0409000004" }, "model" : "Bob Esponja", "style" : "Alternative", "size" : 40, "colour" : "yellow", "price" : 789, "summary" : "summer 2012 nikelodeon", "img" : "/img/bobesponja.jpg" }
+{ "_id" : { "$oid" : "5401ffde4ce57f0409000005" }, "model" : "Elmo", "style" : "Casual", "size" : 44, "colour" : "red", "price" : 700, "summary" : "elmo s season 2012", "img" : "/img/elmo.jpg" }
+{ "_id" : { "$oid" : "540200104ce57f0409000006" }, "model" : "spiderman", "style" : "Vintage", "size" : 42, "colour" : "red", "price" : 650, "summary" : "MARVEL season 2012", "img" : "/img/spiderman.jpg" }
+{ "_id" : { "$oid" : "5402003c4ce57f0409000007" }, "model" : "Star Wars", "style" : "Alternative", "size" : 44, "colour" : "black", "price" : 800, "summary" : "Lucas Film Collection", "img" : "/img/starwars.jpg" }
+{ "_id" : { "$oid" : "540200564ce57f0409000008" }, "model" : "Spiderman", "style" : "Alternative", "size" : 44, "colour" : "green", "price" : 598, "summary" : "Marvel Pretty Green", "img" : "/img/superman.jpg" }
+{ "_id" : { "$oid" : "540200dd4ce57f0409000009" }, "model" : "Bart Simpson", "style" : "Vintage", "size" : 42, "colour" : "black", "price" : 564, "summary" : "summer 2013 limited edition", "img" : "/img/bart.jpg" }
+{ "_id" : { "$oid" : "540201414ce57f040900000a" }, "model" : "U2", "style" : "Alternative", "size" : 40, "colour" : "black", "price" : 671, "summary" : "U2 Travel 2013 360", "img" : "/img/descarga.jpg" }
+{ "_id" : { "$oid" : "540201804ce57f040900000b" }, "model" : "U2", "style" : "Alternative", "size" : 46, "colour" : "white", "price" : 780, "summary" : "U2 Travel 2013 360", "img" : "/img/u22.jpg" }
+{ "_id" : { "$oid" : "5413c3070a084c8870e41806" }, "model" : "boca", "style" : "Casual", "size" : 40, "colour" : "blue and yellow", "price" : 489, "summary" : "Torneo Clausura 2013", "img" : "/img/boca.jpg" }
+{ "_id" : { "$oid" : "5413c34b0a084c8870e41807" }, "model" : "river", "style" : "Casual", "size" : 42, "colour" : "red and white", "price" : 512, "summary" : "Torneo Clausura 2013", "img" : "/img/river.jpg" }
+{ "_id" : { "$oid" : "5413c3930a084c8870e41808" }, "model" : "Android", "style" : "Vintage", "size" : 44, "colour" : "black", "price" : 433, "summary" : "Computer Season", "img" : "/img/android.jpg" }
+{ "_id" : { "$oid" : "5413c3d70a084c8870e41809" }, "model" : "Google", "style" : "Vintage", "size" : 38, "colour" : "white", "price" : 412, "summary" : "Computer Season", "img" : "/img/google.jpg" }
+{ "_id" : { "$oid" : "5413c4190a084c8870e4180a" }, "model" : "Green Day", "style" : "Alternative", "size" : 42, "colour" : "black", "price" : 754, "summary" : "Much Music 2012", "img" : "/img/greenday.jpg" }
+{ "_id" : { "$oid" : "5413c4500a084c8870e4180b" }, "model" : "Radiohead", "style" : "Alternative", "size" : 42, "colour" : "white", "price" : 800, "summary" : "Much Music 2013", "img" : "/img/radiohead.jpg" }
+{ "_id" : { "$oid" : "5413c4b00a084c8870e4180c" }, "model" : "Twitter", "style" : "Vintage", "size" : 44, "colour" : "white", "price" : 853, "summary" : "Computer Season", "img" : "/img/twitter.jpg" }
