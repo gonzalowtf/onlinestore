@@ -82,3 +82,5 @@ img.save(function(err){
 
 module.exports = mongoose.model('imagenes', modeloimagen);
 
+// mongodump --collection tshirts --db tshirts
+
