@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ="MainApp">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv ="web store example">
+  <meta http-equiv ="Content-Type" content ="text/html";>
+
+	<title>Web Store Example</title>
+
+	<script src ="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   
+    <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+ 
+    <!-- importando angular js -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script type="text/javascript" src = "/emergente/bootbox.min.js"></script>
+
+    
+    <div class="jumbotron">
+    	<h1>Example web Store !</h1>
+  		<p>find items by name and characteristics</p>
+  	</div>
+    
+    <style>
+     
+     #prueba{
+      
+      width:800px;
+  
+
+    }
+
+
+    </style>
+    
+</head>
+<body ng-controller="mainController">  
+	<div class="page-header">
+  		<h3>T-shirts data base &nbsp<small>is just a test for a web store searcher</small>
+	
+  <div class="col-lg-6">	
+	<div class="row" id="prueba">
+  		<div class="col-lg-8">
+    		<div class="input-group">
+      			 				 
+      			<input type="text" class="form-control" id ="find" placeHolder="Search..." ng-model ="query">
+      			<span class="input-group-btn">
+      			<button class="btn btn-default" type="button">Go!</button>
+      		</span>
+    		</div><!-- /input-group -->
+  		</div><!-- /.col-lg-6 -->
+  	</div><!--row -->
+  </h3>
+    </div>
+    </div>	
+
+  		<div class="container" id="store">
+        <h4>How Many ? : <span class="label label-success">{{tshirt.length}}</span></h4>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4" ng-repeat ="tshirts in tshirt | filter:query">
+                <div class="thumbnail">
+                  <img src = {{tshirts.img}}></img>
+                            <div class="caption">
+                                 <h3 id = "nombre">Model :  {{tshirts.model}}</h3>
+        <p>
+           Style: {{tshirts.style}} <br>
+           Size:  {{tshirts.size}} <br>
+           Colour:{{tshirts.colour}} <br>
+           Price: {{tshirts.price}} <br>
+           Summary:{{tshirts.summary}} <br> 
+          
+        </p>
+        
+        <p><a class="btn btn-primary" role="button" onClick = "buy()">Buy</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+	 
+
+  <script>
+
+angular.module('MainApp', [])
+
+function mainController($scope, $http) {
+  $scope.tshirt = {};
+  $scope.selected = false;
+  
+
+  // Obtenemos todos los datos de la base de datos
+  $http.get('tshirts').success(function(data) {
+    $scope.tshirt = data;
+  })
+  .error(function(data) {
+    console.log('Error: ' + data);
+  });
+
+
+
+}
+
+
+  </script>
+
+  <script type = "text/JavaScript">
+
+
+function buy(){
+
+bootbox.confirm("Are you sure you want to buy this item ?!", function (res){
+if(res == true)   bootbox.alert("Item Bought !");
+if(res ==false)   bootbox.alert("You decline for buying this item..");
+});
+
+}
+
+
+  </script>
+
+
+ 
+</body>
+<footer>
+    <div class="well well-lg">Be Smart</div>
+
+  </footer>
+</html>
